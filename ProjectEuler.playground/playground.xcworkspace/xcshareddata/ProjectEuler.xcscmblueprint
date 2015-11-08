@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "56C2BB398BA17EBD99C94F364F0464CDE44420A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "14651705FB81BD97AEE1DA5B1DECF6CAD54A5F22" : 0,
+    "56C2BB398BA17EBD99C94F364F0464CDE44420A6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "49F33272-5694-4D9A-A7C4-B181B54AB479",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "14651705FB81BD97AEE1DA5B1DECF6CAD54A5F22" : "..",
+    "56C2BB398BA17EBD99C94F364F0464CDE44420A6" : "project-euler\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ProjectEuler",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ProjectEuler.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gummibeatz\/hackesscode-2015.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14651705FB81BD97AEE1DA5B1DECF6CAD54A5F22"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gummibeatz\/project-euler.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "56C2BB398BA17EBD99C94F364F0464CDE44420A6"
+    }
+  ]
+}

@@ -56,7 +56,10 @@ extension String {
             return self[Range(start: startIndex, end: endIndex)]
         }
     }
-
+    
+    subscript (i: Int) -> Character {
+        return self[self.startIndex.advancedBy(i)]
+    }
 
     func grouped(n: Int) -> [String]? {
         guard n <= self.characters.count else { return nil }
@@ -72,6 +75,20 @@ extension String {
 //    let c = b.map{ Int($0)!.splitDigits().reduce(1, combine: *) }
 //    print(c.sort { $0 > $1 }.first!)
 //}
+
+// space complexity of O(n)
+func getLargestProductInSeries(numberOfAdjacentDigits: Int, series: String) -> Int {
+    var digits:[Int] = Array(series.characters)[0..<numberOfAdjacentDigits].map{
+        Int(String($0))!
+    }
+    var maxNum = digits.reduce(1, combine: *)
+    
+    for idx in numberOfAdjacentDigits..<series.characters.count {
+        digits[idx%numberOfAdjacentDigits] = Int(String(series[idx]))!
+        maxNum = max(maxNum, digits.reduce(1, combine: *))
+    }
+    return maxNum
+}
 
 //: run time: 0.10s
 UInt64.max
