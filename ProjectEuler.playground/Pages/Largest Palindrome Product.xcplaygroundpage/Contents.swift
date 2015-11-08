@@ -56,17 +56,18 @@ print(NSDate())
 extension Int {
     func isPalindrome() -> Bool {
         var reversedNum = 0
-        var digit = 0
         var remainingNum = self
         while(remainingNum > 0) {
-            digit = remainingNum % 10
-            reversedNum += digit
+            reversedNum += remainingNum % 10
             reversedNum *= 10
-            remainingNum = (remainingNum - digit) / 10
+            remainingNum /= 10   // takes advantage of Swift's truncation of Int
         }
         return self == (reversedNum / 10)
     }
 }
+
+
+
 
 func largestPalindromWithXNumberOfDigits(numberOfDigits: Int) -> Int {
     let largest = Int((0..<numberOfDigits).map{_ in "9"}.joinWithSeparator(""))!
